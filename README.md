@@ -1,7 +1,9 @@
 # MODIS Processing for US Drylands
 
-Calculate monthly and yearly mean, standard deviation, maximum, minimum, amplitude, and integral for MODIS time series of LAI (MCD15A2H) and Daytime and Nighttime LST from Terra (MOD11A2) and Aqua (MYD11A2)
+Calculate monthly and yearly mean, standard deviation, maximum, minimum, amplitude, and integral for MODIS time series of 4-day composite LAI (MCD15A2H) and daily daytime and nighttime LST from both Terra (MOD11A2) and Aqua (MYD11A2)
 
+## Inputs
+Inputs are netCDF4 format outputs from APPEEARS 
 
 ## Outputs
 ### CSV
@@ -36,5 +38,6 @@ $ ogr2ogr -t_srs "+proj=sinu +lon_0=0 +x_0=0 +y_0=0 +a=6371007.181 +b=6371007.18
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjE4NzE0MjcsLTkwNDQzNjc1Nl19
+eyJoaXN0b3J5IjpbOTU3NDkyODI5LC0xNjIxODcxNDI3LC05MD
+Q0MzY3NTZdfQ==
 -->
