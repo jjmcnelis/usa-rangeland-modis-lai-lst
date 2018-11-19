@@ -15,6 +15,13 @@ We use netCDF version 4  files from ...
 ```
 <json goes here>
 ```
+### Aridity Index
+ai.shp | WGS84 - ESRI Shapefile
+[https://www.gdal.org/ogr2ogr.html]
+Transform to "+proj=sinu +lon_0=0 +x_0=0 +y_0=0 +a=6371007.181 +b=6371007.181 +units=m +no_defs "
+```
+$ ogr2ogr -t_srs "+proj=sinu +lon_0=0 +x_0=0 +y_0=0 +a=6371007.181 +b=6371007.181 +units=m +no_defs " ai-drylands-sinu.shp  ai-drylands.shp
+```
 
 
 
@@ -48,6 +55,6 @@ Yearly (1/year)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTM0OTg5NywtMTYyMTg3MTQyNywtOT
+eyJoaXN0b3J5IjpbMjA5ODA0MDY3MiwtMTYyMTg3MTQyNywtOT
 A0NDM2NzU2XX0=
 -->
