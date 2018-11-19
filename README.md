@@ -4,8 +4,8 @@ Calculate monthly and yearly mean, standard deviation, maximum, minimum, amplitu
 
 ## Inputs
 Inputs are netCDF4 format outputs from APPEEARS (https://lpdaacsvc.cr.usgs.gov/appeears/). Request the input data for this analysis using the following JSON strings:
-
-
+### MODIS 
+We use netCDF version 4  files from ...
 
 * 4-day Leaf Area Index and QC datasets from MCD15A3H (Terra+Aqua):
 ```
@@ -15,11 +15,6 @@ Inputs are netCDF4 format outputs from APPEEARS (https://lpdaacsvc.cr.usgs.gov/a
 ```
 <json goes here>
 ```
-* Aqua daily Daytime and Nightime Land Surface Temperature and QC datasets from MYD11A2:
-```
-<json goes here>
-```
-
 
 ## Outputs
 ### CSV
@@ -54,6 +49,6 @@ $ ogr2ogr -t_srs "+proj=sinu +lon_0=0 +x_0=0 +y_0=0 +a=6371007.181 +b=6371007.18
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4Mzc1NTk5OCwtMTYyMTg3MTQyNywtOT
+eyJoaXN0b3J5IjpbMTUwNDQ4MTM4MCwtMTYyMTg3MTQyNywtOT
 A0NDM2NzU2XX0=
 -->
