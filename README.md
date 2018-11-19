@@ -4,7 +4,20 @@ Calculate monthly and yearly mean, standard deviation, maximum, minimum, amplitu
 
 ## Inputs
 Inputs are netCDF4 format outputs from APPEEARS (https://lpdaacsvc.cr.usgs.gov/appeears/). Request the input data for this analysis using the following JSON strings:
-4-day composite Leaf Area Index (and QC datasets from MCD15A3H
+
+* 4-day composite Leaf Area Index and QC datasets from MCD15A3H:
+```
+<json goes here>
+```
+* 4-day composite Leaf Area Index and QC datasets from MCD15A3H:
+```
+<json goes here>
+```
+* 4-day composite Leaf Area Index and QC datasets from MCD15A3H:
+```
+<json goes here>
+```
+
 
 ## Outputs
 ### CSV
@@ -39,6 +52,6 @@ $ ogr2ogr -t_srs "+proj=sinu +lon_0=0 +x_0=0 +y_0=0 +a=6371007.181 +b=6371007.18
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0NjMwMjc2NywtMTYyMTg3MTQyNywtOT
+eyJoaXN0b3J5IjpbMTc0OTc1OTQ1OSwtMTYyMTg3MTQyNywtOT
 A0NDM2NzU2XX0=
 -->
