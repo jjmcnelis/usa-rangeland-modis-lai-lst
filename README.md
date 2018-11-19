@@ -16,6 +16,8 @@ We use netCDF version 4  files from ...
 <json goes here>
 ```
 
+
+
 ## Outputs
 ### CSV
 ### NetCDF
@@ -35,10 +37,7 @@ Monthly (12/year)
 Yearly (1/year)
 
 # Aridity index
-[https://www.gdal.org/ogr2ogr.html]
-```
-$ ogr2ogr -t_srs "+proj=sinu +lon_0=0 +x_0=0 +y_0=0 +a=6371007.181 +b=6371007.181 +units=m +no_defs " ai-drylands-sinu.shp  ai-drylands.shp
-```
+
 
 # Testing
 ```
@@ -49,6 +48,6 @@ $ ogr2ogr -t_srs "+proj=sinu +lon_0=0 +x_0=0 +y_0=0 +a=6371007.181 +b=6371007.18
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwNDQ4MTM4MCwtMTYyMTg3MTQyNywtOT
+eyJoaXN0b3J5IjpbLTEzOTM0OTg5NywtMTYyMTg3MTQyNywtOT
 A0NDM2NzU2XX0=
 -->
