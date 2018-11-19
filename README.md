@@ -1,9 +1,10 @@
 # MODIS Processing for US Drylands
 
-Calculate monthly and yearly mean, standard deviation, maximum, minimum, amplitude, and integral for MODIS time series of 4-day composite LAI (MCD15A2H) and daily daytime and nighttime LST from both Terra (MOD11A2) and Aqua (MYD11A2)
+Calculate monthly and yearly mean, standard deviation, maximum, minimum, amplitude, and integral for MODIS time series of 4-day composite LAI (MCD15A3H) and daily daytime and nighttime LST from both Terra (MOD11A2) and Aqua (MYD11A2)
 
 ## Inputs
-Inputs are netCDF4 format outputs from APPEEARS 
+Inputs are netCDF4 format outputs from APPEEARS (https://lpdaacsvc.cr.usgs.gov/appeears/). Request the input data for this analysis using the following JSON strings:
+4-day composite Leaf Area Index (and QC datasets from MCD15A3H
 
 ## Outputs
 ### CSV
@@ -38,6 +39,6 @@ $ ogr2ogr -t_srs "+proj=sinu +lon_0=0 +x_0=0 +y_0=0 +a=6371007.181 +b=6371007.18
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU3NDkyODI5LC0xNjIxODcxNDI3LC05MD
-Q0MzY3NTZdfQ==
+eyJoaXN0b3J5IjpbMTI0NjMwMjc2NywtMTYyMTg3MTQyNywtOT
+A0NDM2NzU2XX0=
 -->
