@@ -4,6 +4,8 @@ Calculate monthly and yearly mean, standard deviation, maximum, minimum, amplitu
 
 
 ## Outputs
+### CSV
+### NetCDF
 ### GeoTIFF
 **LST Terra:**
 Day Monthly (12/year)
@@ -23,5 +25,5 @@ Yearly (1/year)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxMjc1MjM5Nl19
+eyJoaXN0b3J5IjpbLTkwNDQzNjc1Nl19
 -->
