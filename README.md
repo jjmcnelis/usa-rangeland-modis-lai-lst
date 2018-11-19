@@ -4,17 +4,24 @@ Calculate monthly and yearly mean, standard deviation, maximum, minimum, amplitu
 
 
 ### Outputs
-**GeoTIFF**
-LST Terra:
+#### GeoTIFF
+**LST Terra:**
+Day Monthly (**x12)
+Day Yearly (x1)
+Night Monthly (x12)
+Night Yearly (x1)
+**LST Aqua:**
 Day Monthly (x12)
 Day Yearly (x1)
-Day Monthly (x12)
-Day Yearly (x1)
- L (13/yr),  Terra LST Night (13/yr), Aqua LST Day (13/yr), Aqua LST Night (13/yr)]
+Night Monthly (x12)
+Night Yearly (x1)
+**LAI Combined:**
+Monthly (x12)
+Yearly (x1)
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE2OTIyOTg3XX0=
+eyJoaXN0b3J5IjpbLTE4MTgxNjI0NzZdfQ==
 -->
