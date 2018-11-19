@@ -7,11 +7,11 @@ Inputs are netCDF4 format outputs from APPEEARS (https://lpdaacsvc.cr.usgs.gov/a
 
 
 
-* Terra+Aqua 4-day Leaf Area Index and QC datasets from MCD15A3H:
+* 4-day Leaf Area Index and QC datasets from MCD15A3H (Terra+Aqua):
 ```
 <json goes here>
 ```
-* Terra daily Daytime and Nightime Land Surface Temperature and QC datasets from MOD11A2:
+* Daily Daytime and Nightime Land Surface Temperature and QC datasets from MOD11A2 (Terra) and MYD11A2 (Aqua):
 ```
 <json goes here>
 ```
@@ -54,6 +54,6 @@ $ ogr2ogr -t_srs "+proj=sinu +lon_0=0 +x_0=0 +y_0=0 +a=6371007.181 +b=6371007.18
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5ODIyMTY4OSwtMTYyMTg3MTQyNywtOT
+eyJoaXN0b3J5IjpbLTI4Mzc1NTk5OCwtMTYyMTg3MTQyNywtOT
 A0NDM2NzU2XX0=
 -->
