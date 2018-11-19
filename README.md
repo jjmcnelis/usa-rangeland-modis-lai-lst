@@ -3,25 +3,25 @@
 Calculate monthly and yearly mean, standard deviation, maximum, minimum, amplitude, and integral for MODIS time series of LAI (MCD15A2H) and Daytime and Nighttime LST from Terra (MOD11A2) and Aqua (MYD11A2)
 
 
-### Outputs
-#### GeoTIFF
+## Outputs
+### GeoTIFF
 **LST Terra:**
-Day Monthly (**x12)
-Day Yearly (x1)
-Night Monthly (x12)
-Night Yearly (x1)
+Day Monthly (12/year)
+Day Yearly (1/year)
+Night Monthly (12/year)
+Night Yearly (1/year)
 **LST Aqua:**
-Day Monthly (x12)
-Day Yearly (x1)
-Night Monthly (x12)
-Night Yearly (x1)
+Day Monthly (12/year)
+Day Yearly (1/year)
+Night Monthly (12/year)
+Night Yearly (1/year)
 **LAI Combined:**
-Monthly (x12)
-Yearly (x1)
+Monthly (12/year)
+Yearly (1/year)
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTgxNjI0NzZdfQ==
+eyJoaXN0b3J5IjpbMTkxMjc1MjM5Nl19
 -->
