@@ -8,7 +8,12 @@ conda version : 4.5.11
 conda-build version : 3.0.27
 python version : 3.6.3.final.0 
 
-**Packages**
+**Packages** --- Install in this order, if possible, or use the YAML to mirror my environment:
+
+*matplotlib : conda install -c conda-forge matplotlib
+conda install -c conda-forge netcdf4
+conda install -c conda-forge basemap
+conda install -c conda-forge gdal
 
 
 ## Inputs
@@ -63,6 +68,6 @@ Yearly (1/year)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTkyODg1OTYsLTg4MjA5Njc4OCwtMT
-YyMTg3MTQyNywtOTA0NDM2NzU2XX0=
+eyJoaXN0b3J5IjpbLTgwODgwMDE2NSwtODgyMDk2Nzg4LC0xNj
+IxODcxNDI3LC05MDQ0MzY3NTZdfQ==
 -->
