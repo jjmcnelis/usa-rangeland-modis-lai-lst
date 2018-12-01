@@ -7,8 +7,8 @@ Calculate monthly and yearly mean, standard deviation, maximum, minimum, amplitu
 I recommend using Anaconda (2 or 3, code is version-agnostic as of November 2018) to manage packages because GDAL's Python bindings can be a PITA. But you can figure a workaround, if need be. GDAL is only used once to convert an ESRI Shapefile mask to a numpy array with dimensions equal to the input MODIS gridded data.
 
 **Packages** --- (will provide a YAML at some point  so you can duplicate my environment)
-* netCDF4 : 	conda install -c conda-forge netcdf4
-* gdal : conda install -c conda-forge gdal
+* netCDF4 : 	```conda install -c conda-forge netcdf4``` | Unidata: http://unidata.github.io/netcdf4-python/
+* gdal : ```conda install -c conda-forge gdal``` | OSGeo: https://gdal.org/python/
 
 
 ## Inputs
@@ -63,6 +63,6 @@ Yearly (1/year)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyOTQ5MzkzNCwtMTQwOTE1NjIyOCwtOD
-gyMDk2Nzg4LC0xNjIxODcxNDI3LC05MDQ0MzY3NTZdfQ==
+eyJoaXN0b3J5IjpbLTE3MDg0MjA4MTIsLTE0MDkxNTYyMjgsLT
+g4MjA5Njc4OCwtMTYyMTg3MTQyNywtOTA0NDM2NzU2XX0=
 -->
