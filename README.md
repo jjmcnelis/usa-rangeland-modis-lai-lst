@@ -18,7 +18,10 @@ Unidata provides a powerful set of tools for manipulating n-dimensional arrays s
 
 
 ## Run
-**1.** Crop datasets to dryland extent as defined by 
+**1.** Crop datasets to dryland extent (Author et al. ####) to limit processing overhead:
+```
+
+```
 # 
 # 
 # 
@@ -111,7 +114,7 @@ Yearly (1/year)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMTE3MDI4NSwxMzE3NDk3ODM4LC0xND
+eyJoaXN0b3J5IjpbLTU2NzY2Njc3NiwxMzE3NDk3ODM4LC0xND
 A5MTU2MjI4LC04ODIwOTY3ODgsLTE2MjE4NzE0MjcsLTkwNDQz
 Njc1Nl19
 -->
