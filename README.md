@@ -7,8 +7,7 @@
 ## Requirements
 
 ### Python environment 
-I recommend using Anaconda (2 or 3, code is version-agnostic as of November 2018) to manage packages because GDAL's Python bindings can be a PITA. But you can figure a workaround, if need be. GDAL is only used once to convert an ESRI Shapefile mask to a numpy array with dimensions equal to the input MODIS gridded data.
-
+I recommend setting up a dedicated environment when using GDAL bec
 **Packages** --- (will provide YAML at some point  so you can duplicate my environment)
 * netCDF4 : 	```conda install -c conda-forge netcdf4``` | [Unidata](http://unidata.github.io/netcdf4-python/)
 * gdal : ```conda install -c conda-forge gdal``` | [OSGeo](https://gdal.org/python/)
@@ -108,7 +107,7 @@ Yearly (1/year)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI4NTk1MTkyLDEzMTc0OTc4MzgsLTE0MD
-kxNTYyMjgsLTg4MjA5Njc4OCwtMTYyMTg3MTQyNywtOTA0NDM2
-NzU2XX0=
+eyJoaXN0b3J5IjpbLTIyNzU3MjU4MSwxMzE3NDk3ODM4LC0xND
+A5MTU2MjI4LC04ODIwOTY3ODgsLTE2MjE4NzE0MjcsLTkwNDQz
+Njc1Nl19
 -->
