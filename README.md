@@ -24,6 +24,10 @@ Unidata provides a powerful set of tools for manipulating n-dimensional arrays s
 ```
 $ python ncspatial.py 
 ```
+**2.** Filter datasets using PI-recommended MODIS quality filtering criteria
+```
+
+```
 # 
 # 
 # 
@@ -116,7 +120,7 @@ Yearly (1/year)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwMTA0MzExMywxMzE3NDk3ODM4LC0xND
-A5MTU2MjI4LC04ODIwOTY3ODgsLTE2MjE4NzE0MjcsLTkwNDQz
-Njc1Nl19
+eyJoaXN0b3J5IjpbNjA0MDg0NDYzLDEzMTc0OTc4MzgsLTE0MD
+kxNTYyMjgsLTg4MjA5Njc4OCwtMTYyMTg3MTQyNywtOTA0NDM2
+NzU2XX0=
 -->
