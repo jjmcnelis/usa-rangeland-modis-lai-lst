@@ -3,19 +3,11 @@
 Calculate monthly and yearly mean, standard deviation, maximum, minimum, amplitude, and integral for MODIS time series of 4-day composite LAI (MCD15A3H) and daily daytime and nighttime LST from both Terra (MOD11A2) and Aqua (MYD11A2)
 
 ## Requirements
-#### Python environment 
+### Python environment 
 I recommend using Anaconda (2 or 3, code is version-agnostic as of November 2018) to manage packages because GDAL's Python bindings can be a PITA. But you can figure a workaround, if need be. GDAL is only used once to convert an ESRI Shapefile mask to a numpy array with dimensions equal to the input MODIS gridded data.
-* netCDF4 : conda install -c conda-forge netcdf4
-* gdal : conda install -c conda-forge gdal
-* 
 
-
-
-**Packages** --- Install in this order, if possible, or use the YAML to mirror my environment:
-
-* matplotlib : 	conda install -c conda-forge matplotlib
+**Packages** --- (will provide a YAML at some point  so you can duplicate my environment)
 * netCDF4 : 	conda install -c conda-forge netcdf4
-* basemap : conda install -c conda-forge basemap
 * gdal : conda install -c conda-forge gdal
 
 
@@ -71,6 +63,6 @@ Yearly (1/year)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2OTQ1NjM3MCwtMTQwOTE1NjIyOCwtOD
+eyJoaXN0b3J5IjpbLTgyOTQ5MzkzNCwtMTQwOTE1NjIyOCwtOD
 gyMDk2Nzg4LC0xNjIxODcxNDI3LC05MDQ0MzY3NTZdfQ==
 -->
