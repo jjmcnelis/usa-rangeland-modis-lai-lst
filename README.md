@@ -1,14 +1,17 @@
 # MODIS Processing for US Drylands
 
-***Calculate mean, standard deviation, maximum, minimum for various time intervals MODIS time series of 4-day composite LAI (MCD15A3H) and daily daytime and nighttime LST from both Terra (MOD11A2) and Aqua (MYD11A2)*
+**About:** Calculate mean, standard deviation, maximum, minimum for various time intervals MODIS time series of 4-day composite LAI (MCD15A3H) and daily daytime and nighttime LST from both Terra (MOD11A2) and Aqua (MYD11A2)
 
 ## Requirements
+
 ### Python environment 
 I recommend using Anaconda (2 or 3, code is version-agnostic as of November 2018) to manage packages because GDAL's Python bindings can be a PITA. But you can figure a workaround, if need be. GDAL is only used once to convert an ESRI Shapefile mask to a numpy array with dimensions equal to the input MODIS gridded data.
 
 **Packages** --- (will provide a YAML at some point  so you can duplicate my environment)
 * netCDF4 : 	```conda install -c conda-forge netcdf4``` | Unidata: http://unidata.github.io/netcdf4-python/
 * gdal : ```conda install -c conda-forge gdal``` | OSGeo: https://gdal.org/python/
+
+### NetCDF operators (NCO)
 
 
 ## Inputs
@@ -63,6 +66,6 @@ Yearly (1/year)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDI5MDY0OTIsLTE0MDkxNTYyMjgsLT
-g4MjA5Njc4OCwtMTYyMTg3MTQyNywtOTA0NDM2NzU2XX0=
+eyJoaXN0b3J5IjpbMTMxNzQ5NzgzOCwtMTQwOTE1NjIyOCwtOD
+gyMDk2Nzg4LC0xNjIxODcxNDI3LC05MDQ0MzY3NTZdfQ==
 -->
