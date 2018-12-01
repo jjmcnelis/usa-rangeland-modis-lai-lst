@@ -5,12 +5,15 @@
 **Cite our manuscript**: In prep
 
 ## Requirements
+
 **Python environment**
 I recommend setting up a dedicated environment when using GDAL because the python bindings can be a real PITA if you have multiple Python installs or other dependent GIS software.
 * netCDF4 : 	```conda install -c conda-forge netcdf4``` | [Unidata](http://unidata.github.io/netcdf4-python/)
 * gdal : ```conda install -c conda-forge gdal``` | [OSGeo](https://gdal.org/python/)
-*--- will provide YAML at some point  so you can duplicate my environment*
-### NetCDF operators (NCO)
+
+*--- I'll upload an env config at some point  so you can duplicate mine*
+
+**NetCDF operators (NCO)**
 Unidata provides a powerful set of tools for manipulating n-dimensional arrays stored in netCDF format...
 
 # 
@@ -105,7 +108,7 @@ Yearly (1/year)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Mjg0NDgyNzUsMTMxNzQ5NzgzOCwtMT
-QwOTE1NjIyOCwtODgyMDk2Nzg4LC0xNjIxODcxNDI3LC05MDQ0
-MzY3NTZdfQ==
+eyJoaXN0b3J5IjpbLTY2MDkwNjUwNywxMzE3NDk3ODM4LC0xND
+A5MTU2MjI4LC04ODIwOTY3ODgsLTE2MjE4NzE0MjcsLTkwNDQz
+Njc1Nl19
 -->
