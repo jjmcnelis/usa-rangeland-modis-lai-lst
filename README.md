@@ -4,7 +4,7 @@ Calculate monthly and yearly mean, standard deviation, maximum, minimum, amplitu
 
 ## Requirements
 #### Python environment 
-I recommend using Anaconda (either 2 or 3) 
+I recommend using Anaconda (2 or 3, code is version-agnostic as of November 2018) to manage packages because GDAL's Python bindings can be a PITA. However, GDAL is only used to convert  match an ESRI Shapefile mask  
 * netCDF4 : conda install -c conda-forge netcdf4
 * gdal : conda install -c conda-forge gdal
 * 
@@ -71,6 +71,6 @@ Yearly (1/year)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODU5MTEzMDYsLTE0MDkxNTYyMjgsLT
-g4MjA5Njc4OCwtMTYyMTg3MTQyNywtOTA0NDM2NzU2XX0=
+eyJoaXN0b3J5IjpbMjA2NDY1NjMyOSwtMTQwOTE1NjIyOCwtOD
+gyMDk2Nzg4LC0xNjIxODcxNDI3LC05MDQ0MzY3NTZdfQ==
 -->
