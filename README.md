@@ -3,10 +3,8 @@
 Calculate monthly and yearly mean, standard deviation, maximum, minimum, amplitude, and integral for MODIS time series of 4-day composite LAI (MCD15A3H) and daily daytime and nighttime LST from both Terra (MOD11A2) and Aqua (MYD11A2)
 
 ## Python environment
-**Anaconda3**
-conda version : 4.5.11
-conda-build version : 3.0.27
-python version : 3.6.3.final.0 
+
+
 
 **Packages** --- Install in this order, if possible, or use the YAML to mirror my environment:
 
@@ -68,6 +66,6 @@ Yearly (1/year)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDkxNTYyMjgsLTg4MjA5Njc4OCwtMT
-YyMTg3MTQyNywtOTA0NDM2NzU2XX0=
+eyJoaXN0b3J5IjpbLTI5NzA0NDQzMCwtMTQwOTE1NjIyOCwtOD
+gyMDk2Nzg4LC0xNjIxODcxNDI3LC05MDQ0MzY3NTZdfQ==
 -->
