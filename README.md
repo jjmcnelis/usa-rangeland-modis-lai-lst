@@ -5,7 +5,8 @@
 **Cite our manuscript**: In prep
 
 ## Requirements
-All processing was done in Ubuntu 16.04 environment  [Windows Subsystem for Linux]
+
+All processing was done in **Ubuntu 16.04** environment using [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (AKA the greatest thing ever) on Windows 10.
 
 **Python environment**
 I recommend setting up a dedicated environment when using GDAL because the python bindings can be a real PITA if you have multiple Python installs or other dependent GIS software.
@@ -115,7 +116,7 @@ Yearly (1/year)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMzNjk1NzUwLDEzMTc0OTc4MzgsLTE0MD
-kxNTYyMjgsLTg4MjA5Njc4OCwtMTYyMTg3MTQyNywtOTA0NDM2
-NzU2XX0=
+eyJoaXN0b3J5IjpbMTUyMTI4OTcwOSwxMzE3NDk3ODM4LC0xND
+A5MTU2MjI4LC04ODIwOTY3ODgsLTE2MjE4NzE0MjcsLTkwNDQz
+Njc1Nl19
 -->
