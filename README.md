@@ -1,6 +1,8 @@
-# MODIS Processing for US Drylands
+# Washington-Allen et al. (2019)
 
 **About:** Calculate mean, standard deviation, maximum, minimum for various time intervals MODIS time series of 4-day composite LAI (MCD15A3H) and daily daytime and nighttime LST from both Terra (MOD11A2) and Aqua (MYD11A2)
+
+**Ma
 
 ## Requirements
 
@@ -12,7 +14,43 @@ I recommend using Anaconda (2 or 3, code is version-agnostic as of November 2018
 * gdal : ```conda install -c conda-forge gdal``` | [OSGeo](https://gdal.org/python/)
 
 ### NetCDF operators (NCO)
-Unidata provides a powerful set of tools for 
+Unidata provides a powerful set of tools for manipulating n-dimensional arrays stored in netCDF format...
+
+# 
+# 
+# 
+
+# BELOW IS SCRATCH
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -70,7 +108,7 @@ Yearly (1/year)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NTMxMTQyNSwxMzE3NDk3ODM4LC0xND
+eyJoaXN0b3J5IjpbMTc0MzA1OTkxNywxMzE3NDk3ODM4LC0xND
 A5MTU2MjI4LC04ODIwOTY3ODgsLTE2MjE4NzE0MjcsLTkwNDQz
 Njc1Nl19
 -->
