@@ -2,7 +2,7 @@
 
 **About:** Calculate mean, standard deviation, maximum, minimum for various time intervals MODIS time series of 4-day composite LAI (MCD15A3H) and daily daytime and nighttime LST from both Terra (MOD11A2) and Aqua (MYD11A2)
 
-**Ma
+**Cite our manuscript**: In prep
 
 ## Requirements
 
@@ -108,7 +108,7 @@ Yearly (1/year)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0MzA1OTkxNywxMzE3NDk3ODM4LC0xND
-A5MTU2MjI4LC04ODIwOTY3ODgsLTE2MjE4NzE0MjcsLTkwNDQz
-Njc1Nl19
+eyJoaXN0b3J5IjpbNTI4NTk1MTkyLDEzMTc0OTc4MzgsLTE0MD
+kxNTYyMjgsLTg4MjA5Njc4OCwtMTYyMTg3MTQyNywtOTA0NDM2
+NzU2XX0=
 -->
