@@ -46,7 +46,7 @@ ogr2ogr -a_srs "+proj=sinu +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +datum=WGS84 +uni
 
 ## Datasets
 
-### Data acquisition        
+### Acquisition        
 Used [APPEEARS (LPDAAC)](https://lpdaac.usgs.gov/tools/data_access/appeears) to get the time series for the full history of MODIS Terra and Aqua for 8-day Leaf Area Index ([MOD15A2H](https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table/mod15a2h_v006) and [MYD15A2H](https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table/myd15a2h_v006)) and daily Land Surface Temperature ([MOD11A1](https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table/mod11a1_v006) and [MYD11A1](https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table/myd11a1_v006)) for daytime and nighttime. 
 
 You can submit identical orders to APPEEARS using the JSON included in each products data folder, e.g for Terra and Aqua LAI ([`data/lai/US-LAI-TerraAqua-June-August-request.json`](data/lai/US-LAI-TerraAqua-June-August-request.json)):
@@ -86,7 +86,7 @@ You can submit identical orders to APPEEARS using the JSON included in each prod
    "attempts":1
 }
 ```
-### Data metadata    
+### Metadata    
 Used a JSON file [`datasets.json`](datasets.json) to store some metadata about each of the datasets. This file is consumed by the code at the bottom of the notebook to write python scripts that do the analysis for each dataset.
    
     {'datavar': 'Lai_500m',
@@ -121,5 +121,5 @@ Variable data are organized along *fixed* dimensions and *record*, or *unlimited
 Variables in the netCDF retain the names of their parent subdatasets in the MODIS HDF files stored at LP DAAC:
 https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table/mod15a2h_v006
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3MjE1NDI3Nl19
+eyJoaXN0b3J5IjpbODMwMjk2MzA4LDIwNzIxNTQyNzZdfQ==
 -->
