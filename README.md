@@ -57,7 +57,7 @@ ogr2ogr -a_srs "+proj=sinu +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +datum=WGS84 +uni
 
 ## Datasets
 
-##### Data acquisition        
+### Data acquisition        
 Used [APPEEARS (LPDAAC)](https://lpdaac.usgs.gov/tools/data_access/appeears) to get the time series for the full history of MODIS Terra and Aqua for 8-day Leaf Area Index ([MOD15A2H](https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table/mod15a2h_v006) and [MYD15A2H](https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table/myd15a2h_v006)) and daily Land Surface Temperature ([MOD11A1](https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table/mod11a1_v006) and [MYD11A1](https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table/myd11a1_v006)) for daytime and nighttime. 
 
 You can submit identical orders to APPEEARS using the JSON included in each products data folder, e.g for Terra and Aqua LAI ([`data/lai/US-LAI-TerraAqua-June-August-request.json`](data/lai/US-LAI-TerraAqua-June-August-request.json)):
@@ -97,10 +97,10 @@ You can submit identical orders to APPEEARS using the JSON included in each prod
    "attempts":1
 }
 ```
-
-##### Data metadata    
+### Data metadata    
 Used a JSON file [`datasets.json`](datasets.json) to store some metadata about each of the datasets. This file is consumed by the code at the bottom of the notebook to write python scripts that do the analysis for each dataset.
-
+   
+    
     
     {'datavar': 'Lai_500m',
      'discard_vars': ['FparExtra_QC', 'LaiStdDev_500m'],
@@ -115,50 +115,13 @@ Used a JSON file [`datasets.json`](datasets.json) to store some metadata about e
      'valid_min': 0,
      'var': 'lai'}
     
+### Format
 
-Get some details about the dataset dimensionality so `dask` can chunk the data and parallelize calculations:
+***NetCDF*** https://www.unidata.ucar.edu/software/netcdf/       
 
+NetCDF is a self-describing, machine-independent data formats that support the creation, access, and sharing of array-oriented scientific data. Prefered format is [CF-1.6 Convention](http://cfconventions.org/), but these files aren't fully compliant. I recommend [Panoply](/link/to/panoply) to quickly browse grids and time series. 
 
-```python
-nc = xarray.open_dataset(
-    datasets['mod15a2h']['file'], 
-    mask_and_scale = False,                                   # no. changes data to floats
-    drop_variables = [ 'FparExtra_QC' , 'LaiStdDev_500m' ],   # discard these
-    chunks = { 'time':5, 'ydim': 1000, 'xdim': 1000 }         # chunking
-)
-nc
-```
-
-
-
-
-    <xarray.Dataset>
-    Dimensions:     (time: 226, xdim: 12761, ydim: 5932)
-    Coordinates:
-      * time        (time) object 2000-06-01 00:00:00 ... 2018-08-29 00:00:00
-      * ydim        (ydim) float64 5.491e+06 5.491e+06 ... 2.744e+06 2.744e+06
-      * xdim        (xdim) float64 -1.105e+07 -1.105e+07 ... -5.135e+06 -5.135e+06
-    Data variables:
-        crs         int8 ...
-        FparLai_QC  (time, ydim, xdim) int16 dask.array<shape=(226, 5932, 12761), chunksize=(5, 1000, 1000)>
-        Lai_500m    (time, ydim, xdim) int16 dask.array<shape=(226, 5932, 12761), chunksize=(5, 1000, 1000)>
-    Attributes:
-        title:        MOD15A2H.006 for aid0001
-        Conventions:  CF-1.6
-        institution:  Land Processes Distributed Active Archive Center (LP DAAC)
-        source:       AppEEARS v2.13
-        references:   See README.txt
-        history:      See README.txt
-
-
-
-##### Data format
-
-**NetCDF** https://www.unidata.ucar.edu/software/netcdf/       
-
-NetCDF is a self-describing, machine-independent data formats that support the creation, access, and sharing of array-oriented scientific data. Prefered format is [CF-1.6 Convention](http://cfconventions.org/), but these files aren't fully compliant. I recommend [**Panoply**](/link/to/panoply) to quickly browse grids and time series. 
-
-* Dimensions
+* *Dimensions
 
 Variable data are organized along *fixed* dimensions and *record*, or *unlimited*, dimensions (usually `time`). For example, in our MOD15A2H dataset:
 
@@ -824,5 +787,5 @@ with ProgressBar():
 """.format(**details))
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3ODQzNzUxXX0=
+eyJoaXN0b3J5IjpbMTI1MzA5NjkzM119
 -->
