@@ -9,20 +9,12 @@ This repository documents  data acquisition and processing for **Washington-Alle
 ## Environment
 
 **Windows 10 running Ubuntu 16.04 via Windows Subsystem for Linux** 
-All consumer-grade hardware: i7 8700K 6-cores (12t), 32g memory, PCIe NVM-e 500G SSD
-
-Think the hard drive was the biggest factor in processing time. Test workflow ran very slow (4x processing time) on an enterprise system with far more cores and available memory than my desktop, but the only drive available for writing was shared with other processes reading/writing non-stop. Food for thought.
-
+All consumer-grade hardware: i7 8700K 6-cores (12t), 32g memory, 500G SSD (PCIe NVM-e form factor).
 **Python 3.6 --- required packages**
-
 * `xarray` pandas-like toolkit for analytics on n-dimensional arrays http://xarray.pydata.org/en/stable/index.html 
-
 * `dask` flexible library for parallel computing https://docs.dask.org/en/latest/ 
-
-also,
-
 * `gdal,ogr,osr` only used to make a grid from the drylands mask. Use GDAL command-line tools if gdal for python isnt available. 
-
+* 
 ## Tools
 
 ***Panoply***        https://www.giss.nasa.gov/tools/panoply/       
@@ -129,5 +121,5 @@ Variable data are organized along *fixed* dimensions and *record*, or *unlimited
 Variables in the netCDF retain the names of their parent subdatasets in the MODIS HDF files stored at LP DAAC:
 https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table/mod15a2h_v006
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzg4MzU3NzhdfQ==
+eyJoaXN0b3J5IjpbMjA3MjE1NDI3Nl19
 -->
