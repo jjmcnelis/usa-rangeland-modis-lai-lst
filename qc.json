@@ -1,0 +1,19 @@
+{
+	"lai": {
+		"MODLAND": ["Good quality (main algorithm with or without saturation)"],
+		"SCF_QC": [
+			"Main (RT) method used, best result possible (no saturation)",
+			"Main (RT) method used with saturation. Good, very usable"
+		]
+	},
+	"lst": {
+		"MODLAND": [
+			"LST produced, good quality, not necessary to examine more detailed QA",
+			"LST produced, other quality, recommend examination of more detailed QA"
+		],
+		"LST Error Flag": [
+			"Average LST error <= 1K",
+			"Average LST error <= 2K"
+		]
+	}
+}

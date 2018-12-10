@@ -1,0 +1,11 @@
+Value,MODLAND,Sensor,DeadDetector,CloudState,SCF_QC
+0,Good quality (main algorithm with or without saturation),Terra,"Detectors apparently fine for up to 50% of channels 1, 2",Significant clouds NOT present (clear),"Main (RT) method used, best result possible (no saturation)"
+8,Good quality (main algorithm with or without saturation),Terra,"Detectors apparently fine for up to 50% of channels 1, 2",Significant clouds WERE present,"Main (RT) method used, best result possible (no saturation)"
+16,Good quality (main algorithm with or without saturation),Terra,"Detectors apparently fine for up to 50% of channels 1, 2",Mixed cloud present in pixel,"Main (RT) method used, best result possible (no saturation)"
+32,Good quality (main algorithm with or without saturation),Terra,"Detectors apparently fine for up to 50% of channels 1, 2",Significant clouds NOT present (clear),"Main (RT) method used with saturation. Good, very usable"
+40,Good quality (main algorithm with or without saturation),Terra,"Detectors apparently fine for up to 50% of channels 1, 2",Significant clouds WERE present,"Main (RT) method used with saturation. Good, very usable"
+48,Good quality (main algorithm with or without saturation),Terra,"Detectors apparently fine for up to 50% of channels 1, 2",Mixed cloud present in pixel,"Main (RT) method used with saturation. Good, very usable"
+97,Other Quality (back-up algorithm or fill values),Terra,"Detectors apparently fine for up to 50% of channels 1, 2",Significant clouds NOT present (clear),"Main (RT) method failed due to problems other than geometry, empirical algorithm used"
+105,Other Quality (back-up algorithm or fill values),Terra,"Detectors apparently fine for up to 50% of channels 1, 2",Significant clouds WERE present,"Main (RT) method failed due to problems other than geometry, empirical algorithm used"
+113,Other Quality (back-up algorithm or fill values),Terra,"Detectors apparently fine for up to 50% of channels 1, 2",Mixed cloud present in pixel,"Main (RT) method failed due to problems other than geometry, empirical algorithm used"
+157,Other Quality (back-up algorithm or fill values),Terra,Dead detectors caused >50% adjacent detector retrieval,"Cloud state not defined, assumed clear","Pixel not produced at all, value couldn't be retrieved (possible reasons: bad L1B data, unusable MOD09GA data)"

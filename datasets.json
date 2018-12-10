@@ -1,0 +1,81 @@
+{
+	"mod15a2h": {
+		"file": "data/MOD15A2H.006_500m_aid0001.nc",
+		"output": "outputs/mod15a2h_processed.nc",
+		"var": "lai",
+		"datavar": "Lai_500m",
+		"qcvar": "FparLai_QC",
+		"fillvalue": 255,
+		"lookup": "data/lai/MOD15A2H-006-FparLai-QC-lookup.csv",
+		"discard_vars": ["FparExtra_QC", "LaiStdDev_500m"],
+		"long_name": "MOD15A2H MODIS/Terra Gridded 500M Leaf Area Index LAI (8-day composite)",
+		"valid_min":0,
+		"valid_max":100
+		
+	},
+	"myd15a2h": {
+		"file": "data/MYD15A2H.006_500m_aid0001.nc",
+		"output": "outputs/myd15a2h_processed.nc",
+		"var": "lai",
+		"datavar": "Lai_500m",
+		"qcvar": "FparLai_QC",
+		"fillvalue": 255,
+		"lookup": "data/lai/MYD15A2H-006-FparLai-QC-lookup.csv",
+		"discard_vars": ["FparExtra_QC", "LaiStdDev_500m"],
+		"long_name": "MYD15A2H MODIS/Aqua Gridded 500M Leaf Area Index LAI (8-day composite)",
+		"valid_min":0,
+		"valid_max":100
+	},
+	"mod11a1d": {
+		"file": "data/MOD11A1.006_1km_aid0001.nc",
+		"output": "outputs/mod11a1d_processed.nc",
+		"var": "lst",
+		"datavar": "LST_Day_1km",
+		"qcvar": "QC_Day",
+		"fillvalue": 0,
+		"lookup": "data/lst/MOD11A1-006-QC-Day-lookup.csv",
+		"discard_vars": ["LST_Night_1km","QC_Night"],
+		"long_name": "MOD11A1 Daily daytime 1km grid Land-surface Temperature",
+		"valid_min":150,
+		"valid_max":1310.7
+	},
+	"mod11a1n": {
+		"file": "data/MOD11A1.006_1km_aid0001.nc",
+		"output": "outputs/mod11a1n_processed.nc",
+		"var": "lst",
+		"datavar": "LST_Night_1km",
+		"qcvar": "QC_Night",
+		"fillvalue": 0,
+		"lookup": "data/lst/MOD11A1-006-QC-Night-lookup.csv",
+		"discard_vars": ["LST_Day_1km","QC_Day"],
+		"long_name": "MOD11A1 Daily nighttime 1km grid Land-surface Temperature",
+		"valid_min":150,
+		"valid_max":1310.7
+	},
+	"myd11a1d": {
+		"file": "data/MYD11A1.006_1km_aid0001.nc",
+		"output": "outputs/myd11a1d_processed.nc",
+		"var": "lst",
+		"datavar": "LST_Day_1km",
+		"qcvar": "QC_Day",
+		"fillvalue": 0,
+		"lookup": "data/lst/MYD11A1-006-QC-Day-lookup.csv",
+		"discard_vars": ["LST_Night_1km","QC_Night"],
+		"long_name": "MYD11A1 Daily daytime 1km grid Land-surface Temperature",
+		"valid_min":150,
+		"valid_max":1310.7
+	},
+	"myd11a1n": {
+		"file": "data/MYD11A1.006_1km_aid0001.nc",
+		"output": "outputs/myd11a1n_processed.nc",
+		"var": "lst",
+		"datavar": "LST_Night_1km",
+		"qcvar": "QC_Night",
+		"fillvalue": 0,
+		"lookup": "data/lst/MYD11A1-006-QC-Night-lookup.csv",
+		"discard_vars": ["LST_Day_1km","QC_Day"],
+		"long_name": "MYD11A1 Daily nighttime 1km grid Land-surface Temperature",
+		"valid_min":150,
+		"valid_max":1310.7
+	}
+}
