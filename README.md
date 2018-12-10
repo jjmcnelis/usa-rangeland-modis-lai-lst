@@ -6,7 +6,7 @@ This repository documents  data acquisition and processing for **Washington-Alle
 **Analysis:** [**Jupyter Notebook**](analysis.ipynb)
 **Questions:** [jjmcnelis@outlook.com](mailto:jjmcnelis@outlook.com)
 
-### Environment
+## Environment
 
 **Windows 10 running Ubuntu 16.04 via Windows Subsystem for Linux** 
 All consumer-grade hardware: 
@@ -26,7 +26,7 @@ also,
 
 * `gdal,ogr,osr` only used to make a grid from the drylands mask. Use GDAL command-line tools if gdal for python isnt available. 
 
-### Tools
+## Tools
 
 ***Panoply***        https://www.giss.nasa.gov/tools/panoply/       
 
@@ -55,7 +55,7 @@ in.shp out.<ext>
 ogr2ogr -a_srs "+proj=sinu +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +datum=WGS84 +units=m +no_defs " data/ai/ai-drylands-sinu.shp data/ai/ai-drylands.shp
 ```
 
-### Datasets
+## Datasets
 
 ##### Data acquisition        
 Used [APPEEARS (LPDAAC)](https://lpdaac.usgs.gov/tools/data_access/appeears) to get the time series for the full history of MODIS Terra and Aqua for 8-day Leaf Area Index ([MOD15A2H](https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table/mod15a2h_v006) and [MYD15A2H](https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table/myd15a2h_v006)) and daily Land Surface Temperature ([MOD11A1](https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table/mod11a1_v006) and [MYD11A1](https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table/myd11a1_v006)) for daytime and nighttime. 
@@ -99,18 +99,8 @@ You can submit identical orders to APPEEARS using the JSON included in each prod
 ```
 
 ##### Data metadata    
-Used a JSON file [`datasets.json`](datasets.json) to store some metadata about each of the datasets. This file is consumed by the code at the bottom of the notebook ([**Write processing scripts**](#Scripts)) to write python scripts that do the analysis for each dataset.  
+Used a JSON file [`datasets.json`](datasets.json) to store some metadata about each of the datasets. This file is consumed by the code at the bottom of the notebook to write python scripts that do the analysis for each dataset.
 
-
-```python
-datasets = json.load( open( "datasets.json" , "r" ) )
-
-print("\nThe JSON config for Terra LAI:\n")
-pprint(datasets['mod15a2h'])
-```
-
-    
-    The JSON config for Terra LAI:
     
     {'datavar': 'Lai_500m',
      'discard_vars': ['FparExtra_QC', 'LaiStdDev_500m'],
@@ -834,5 +824,5 @@ with ProgressBar():
 """.format(**details))
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1Nzg1Mjk3NF19
+eyJoaXN0b3J5IjpbLTc3ODQzNzUxXX0=
 -->
