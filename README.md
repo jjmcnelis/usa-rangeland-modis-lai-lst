@@ -621,24 +621,6 @@ with ProgressBar():
         j.compute()
 ```
 
-    [                                        ] | 0% Completed |  1.2s
-
-    D:\Python\Anaconda3\envs\modis_env\lib\site-packages\dask\array\reductions.py:384: RuntimeWarning: invalid value encountered in true_divide
-      u = total / n
-    
-
-    [                                        ] | 0% Completed |  1.6s
-
-    D:\Python\Anaconda3\envs\modis_env\lib\site-packages\dask\array\numpy_compat.py:28: RuntimeWarning: invalid value encountered in true_divide
-      x = np.divide(x1, x2, out)
-    
-
-    [##                                      ] | 6% Completed | 14.7s
-
-    D:\Python\Anaconda3\envs\modis_env\lib\site-packages\dask\core.py:137: RuntimeWarning: invalid value encountered in sqrt
-      return func(*args2)
-    
-
     [########################################] | 100% Completed |  1min 57.2s
     [########################################] | 100% Completed |  1min  3.8s
     
