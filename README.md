@@ -1,7 +1,8 @@
 
-# Introduction
+# About
 
-This notebook documents data acquisition and processing workflow for ***Washington-Allen et al. 2019 (in prep)***. Processed in **Python (3.6) environment** using common scientific data processing libraries. 
+This repository documents  data acquisition and processing for **Washington-Allen et al. 2019 (in prep)**. Processed in **Python (3.6) environment** using common scientific data processing libraries. 
+[**GO TO THE ]
 
 **Questions:** [John McNelis (Jack)](mailto:jjmcnelis@outlook.com)
 
@@ -852,3 +853,6 @@ with ProgressBar():
 
 """.format(**details))
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTc3ODk5MjE4NF19
+-->
