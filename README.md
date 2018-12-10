@@ -8,7 +8,7 @@ This repository documents  data acquisition and processing for **Washington-Alle
 
 ## Environment
 
-**Windows 10 running Ubuntu 16.04 via Windows Subsystem for Linux** 
+**Windows 10 running Ubuntu 16.04 via Windows Subsystem for Linux**          
 All consumer-grade hardware: i7 8700K 6-cores (12t), 32g memory, 500G SSD (PCIe NVM-e form factor).
 **Python 3.6 --- required packages**
 * `xarray` pandas-like toolkit for analytics on n-dimensional arrays http://xarray.pydata.org/en/stable/index.html 
@@ -121,5 +121,6 @@ Variable data are organized along *fixed* dimensions and *record*, or *unlimited
 Variables in the netCDF retain the names of their parent subdatasets in the MODIS HDF files stored at LP DAAC:
 https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table/mod15a2h_v006
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODMwMjk2MzA4LDIwNzIxNTQyNzZdfQ==
+eyJoaXN0b3J5IjpbLTE4MjY0MzUwNjAsODMwMjk2MzA4LDIwNz
+IxNTQyNzZdfQ==
 -->
