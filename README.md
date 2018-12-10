@@ -6,6 +6,9 @@ This repository documents  data acquisition and processing for **Washington-Alle
 **Analysis:** [**Jupyter Notebook**](analysis.ipynb)
 **Questions:** [jjmcnelis@outlook.com](mailto:jjmcnelis@outlook.com)
 
+![plot_beta](/doc/plots_beta.png)          
+*Plots are a work in progress. See the rest of the time series results in [results.ipynb](results.ipynb). **June: Red, July: Green, August: Blue***
+
 ## Environment
 
 **Windows 10 running Ubuntu 16.04 via Windows Subsystem for Linux**   
