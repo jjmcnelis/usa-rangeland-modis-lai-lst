@@ -1,10 +1,10 @@
 
 # About
 
-This repository documents  data acquisition and processing for **Washington-Allen et al. 2019 (in prep)**. Processed in **Python (3.6) environment** using common scientific data processing libraries. 
-[**GO TO THE ]
+This repository documents  data acquisition and processing for **Washington-Allen et al. 2019 (in prep)**. Processed in **Python (3.6) environment** using common scientific data processing libraries.      
 
-**Questions:** [John McNelis (Jack)](mailto:jjmcnelis@outlook.com)
+**Analysis:** [**Jupyter Notebook**](analysis.ipynb)
+**Questions:** [jjmcnelis@outlook.com](mailto:jjmcnelis@outlook.com)
 
 ### Environment
 
@@ -854,5 +854,5 @@ with ProgressBar():
 """.format(**details))
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3ODk5MjE4NF19
+eyJoaXN0b3J5IjpbNjk4NDI2NzUwXX0=
 -->
