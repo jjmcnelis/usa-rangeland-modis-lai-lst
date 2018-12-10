@@ -8,12 +8,11 @@ This repository documents  data acquisition and processing for **Washington-Alle
 
 ### Environment
 
-**Windows 10 box running Ubuntu 16.04 via Windows Subsystem for Linux** 
-
-All consumer-grade (but high-end) hardware: 
-* i7 8700K 6-cores (12t), 
-* 32g memory, 
-* Samsung EVO PCIe NVM-e 500G SSD. 
+**Windows 10 running Ubuntu 16.04 via Windows Subsystem for Linux** 
+All consumer-grade hardware: 
+* i7 8700K 6-cores (12t)
+* 32g memory 
+* Samsung PCIe NVM-e 500G SSD
 
 Think the hard drive was the biggest factor in processing time. Test workflow ran very slow (4x processing time) on an enterprise system with far more cores and available memory than my desktop, but the only drive available for writing was shared with other processes reading/writing non-stop. Food for thought.
 
@@ -26,25 +25,6 @@ Think the hard drive was the biggest factor in processing time. Test workflow ra
 also,
 
 * `gdal,ogr,osr` only used to make a grid from the drylands mask. Use GDAL command-line tools if gdal for python isnt available. 
-
-
-```python
-import os,json,math                        # general env use and reading json configs
-import xarray,pandas,numpy                 # <-- these do 99.9% of processing
-from osgeo import gdal, ogr, osr           # to grid shapefile mask and transform netcdf crs for plots
-
-import matplotlib.pyplot as plt            # plots
-from mpl_toolkits.basemap import Basemap
-
-from collections import OrderedDict        # text-escaped dictionarys in output scripts
-from dask.diagnostics import ProgressBar   # progress bar for long saves
-from pprint import pprint                  # pretty printing in the notebook
-
-shapefile = "data/ai/ai-drylands-sinu.shp"                            # path to drylands mask shapefile
-qc = json.load( open( "qc.json" , "r" ) )
-
-%matplotlib inline
-```
 
 ### Tools
 
@@ -854,5 +834,5 @@ with ProgressBar():
 """.format(**details))
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk4NDI2NzUwXX0=
+eyJoaXN0b3J5IjpbMTU1Nzg1Mjk3NF19
 -->
