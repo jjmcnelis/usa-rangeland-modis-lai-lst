@@ -16,7 +16,7 @@ All consumer-grade hardware: i7 8700K 6-cores (12t), 32g memory, 500G SSD (PCIe 
 * `xarray` pandas-like toolkit for analytics on n-dimensional arrays http://xarray.pydata.org/en/stable/index.html 
 * `dask` flexible library for parallel computing https://docs.dask.org/en/latest/ 
 * `gdal,ogr,osr` only used to make a grid from the drylands mask. Use GDAL command-line tools if gdal for python isnt available. 
-* 
+
 ## Tools
 
 ***Panoply***        https://www.giss.nasa.gov/tools/panoply/       
@@ -123,6 +123,6 @@ Variable data are organized along *fixed* dimensions and *record*, or *unlimited
 Variables in the netCDF retain the names of their parent subdatasets in the MODIS HDF files stored at LP DAAC:
 https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table/mod15a2h_v006
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY3MzcyMjAwLDgzMDI5NjMwOCwyMDcyMT
-U0Mjc2XX0=
+eyJoaXN0b3J5IjpbLTE5ODU4NTA4NTAsODMwMjk2MzA4LDIwNz
+IxNTQyNzZdfQ==
 -->
