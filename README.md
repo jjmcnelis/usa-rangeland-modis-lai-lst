@@ -9,10 +9,7 @@ This repository documents  data acquisition and processing for **Washington-Alle
 ## Environment
 
 **Windows 10 running Ubuntu 16.04 via Windows Subsystem for Linux** 
-All consumer-grade hardware: 
-* i7 8700K 6-cores (12t)
-* 32g memory 
-* Samsung PCIe NVM-e 500G SSD
+All consumer-grade hardware: i7 8700K 6-cores (12t), 32g memory, PCIe NVM-e 500G SSD
 
 Think the hard drive was the biggest factor in processing time. Test workflow ran very slow (4x processing time) on an enterprise system with far more cores and available memory than my desktop, but the only drive available for writing was shared with other processes reading/writing non-stop. Food for thought.
 
@@ -100,8 +97,6 @@ You can submit identical orders to APPEEARS using the JSON included in each prod
 ### Data metadata    
 Used a JSON file [`datasets.json`](datasets.json) to store some metadata about each of the datasets. This file is consumed by the code at the bottom of the notebook to write python scripts that do the analysis for each dataset.
    
-    
-    
     {'datavar': 'Lai_500m',
      'discard_vars': ['FparExtra_QC', 'LaiStdDev_500m'],
      'file': 'data/MOD15A2H.006_500m_aid0001.nc',
@@ -134,5 +129,5 @@ Variable data are organized along *fixed* dimensions and *record*, or *unlimited
 Variables in the netCDF retain the names of their parent subdatasets in the MODIS HDF files stored at LP DAAC:
 https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table/mod15a2h_v006
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4NDg5NTUyMl19
+eyJoaXN0b3J5IjpbLTIwNzg4MzU3NzhdfQ==
 -->
