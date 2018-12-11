@@ -33,7 +33,7 @@ Panoply is a popular viewer for NetCDF (and HDF, GRIB, etc) that takes advantage
 gdal_rasterize \
 -burn 1 \
 -of "GTiff" \
--a_srs "+proj=sinu +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +datum=WGS84 +units=m +no_defs" \
+-a_srs "+proj=sinu +lon_0=0 +x_0=0 +y_0=0 +a=6371007.181 +b=6371007.181 +units=m +no_defs" \
 -a_nodata 0 \
 -te <xmin> <ymin> <xmax> <ymax> \
 -tr <xres> <yres> \
@@ -47,7 +47,7 @@ in.shp out.<ext>
 # +proj=sinu +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
 
 ogr2ogr \
--a_srs "+proj=sinu +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +datum=WGS84 +units=m +no_defs " \
+-a_srs "+proj=sinu +lon_0=0 +x_0=0 +y_0=0 +a=6371007.181 +b=6371007.181 +units=m +no_defs" \
 data/ai/ai-drylands-sinu.shp data/ai/ai-drylands.shp
 ```
 
