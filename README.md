@@ -47,7 +47,7 @@ in.shp out.<ext>
 # +proj=sinu +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
 
 ogr2ogr \
--a_srs "+proj=sinu +lon_0=0 +x_0=0 +y_0=0 +a=6371007.181 +b=6371007.181 +units=m +no_defs" \
+-s_srs EPSG:4326 -t_srs "+proj=sinu +lon_0=0 +x_0=0 +y_0=0 +a=6371007.181 +b=6371007.181 +units=m +no_defs" \
 data/ai/ai-drylands-sinu.shp data/ai/ai-drylands.shp
 ```
 
