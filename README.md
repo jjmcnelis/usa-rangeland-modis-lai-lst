@@ -6,6 +6,9 @@ This repository documents  data acquisition and processing for **Washington-Alle
 **Analysis:** [**Jupyter Notebook**](analysis.ipynb)
 **Questions:** [jjmcnelis@outlook.com](mailto:jjmcnelis@outlook.com)
 
+![plot_beta](/doc/plots_beta.png)          
+*Plots are a work in progress. See the rest of the time series results in [results.ipynb](results.ipynb). **June: Red, July: Green, August: Blue***
+
 ## Environment
 
 **Windows 10 running Ubuntu 16.04 via Windows Subsystem for Linux**   
@@ -30,7 +33,7 @@ Panoply is a popular viewer for NetCDF (and HDF, GRIB, etc) that takes advantage
 gdal_rasterize \
 -burn 1 \
 -of "GTiff" \
--a_srs "+proj=sinu +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +datum=WGS84 +units=m +no_defs" \
+-a_srs "+proj=sinu +lon_0=0 +x_0=0 +y_0=0 +a=6371007.181 +b=6371007.181 +units=m +no_defs" \
 -a_nodata 0 \
 -te <xmin> <ymin> <xmax> <ymax> \
 -tr <xres> <yres> \
@@ -43,7 +46,9 @@ in.shp out.<ext>
 # proj4 string for MODIS Sinusoidal:        
 # +proj=sinu +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +datum=WGS84 +units=m +no_defs
 
-ogr2ogr -a_srs "+proj=sinu +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +datum=WGS84 +units=m +no_defs " data/ai/ai-drylands-sinu.shp data/ai/ai-drylands.shp
+ogr2ogr \
+-a_srs "+proj=sinu +lon_0=0 +x_0=0 +y_0=0 +a=6371007.181 +b=6371007.181 +units=m +no_defs" \
+data/ai/ai-drylands-sinu.shp data/ai/ai-drylands.shp
 ```
 
 ## Datasets
