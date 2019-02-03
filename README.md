@@ -13,7 +13,7 @@ This repository documents  data acquisition and processing for **Washington-Alle
 
 **Windows 10 running Ubuntu 16.04 via Windows Subsystem for Linux**   
        
-All consumer-grade hardware: i7 8700K 6-cores (12t), 32g memory, 500G SSD (PCIe NVM-e form factor).            
+
 
 **Python 3.6 --- required packages**
 * `xarray` pandas-like toolkit for analytics on n-dimensional arrays http://xarray.pydata.org/en/stable/index.html 
