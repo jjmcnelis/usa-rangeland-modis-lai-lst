@@ -6,14 +6,7 @@ This repository documents  data acquisition and processing for **Washington-Alle
 **Analysis:** [**Jupyter Notebook**](analysis.ipynb)
 **Questions:** [jjmcnelis@outlook.com](mailto:jjmcnelis@outlook.com)
 
-![plot_beta](/doc/plots_beta.png)          
-*Plots are a work in progress. See the rest of the time series results in [results.ipynb](results.ipynb). **June: Red, July: Green, August: Blue***
-
 ## Environment
-
-**Windows 10 running Ubuntu 16.04 via Windows Subsystem for Linux**   
-       
-
 
 **Python 3.6 --- required packages**
 * `xarray` pandas-like toolkit for analytics on n-dimensional arrays http://xarray.pydata.org/en/stable/index.html 
@@ -53,7 +46,6 @@ data/ai/ai-drylands-sinu.shp data/ai/ai-drylands.shp
 
 ## Datasets
 
-### Acquisition        
 Used [APPEEARS (LPDAAC)](https://lpdaac.usgs.gov/tools/data_access/appeears) to get the time series for the full history of MODIS Terra and Aqua for 8-day Leaf Area Index ([MOD15A2H](https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table/mod15a2h_v006) and [MYD15A2H](https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table/myd15a2h_v006)) and daily Land Surface Temperature ([MOD11A1](https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table/mod11a1_v006) and [MYD11A1](https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table/myd11a1_v006)) for daytime and nighttime. 
 
 You can submit identical orders to APPEEARS using the JSON included in each products data folder, e.g for Terra and Aqua LAI ([`data/lai/US-LAI-TerraAqua-June-August-request.json`](data/lai/US-LAI-TerraAqua-June-August-request.json)):
